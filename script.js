@@ -18,7 +18,7 @@ function onBoardTitleClick(boardId) {
   }
 
   const boardTitleElement = document.querySelector(
-    `.board-${boardId} .board-title`
+    `[data-board-id="${boardId}"] .board-title`
   );
   boardTitleElement.textContent = newTitle;
 }
